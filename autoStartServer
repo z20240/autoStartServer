@@ -11,25 +11,21 @@ use strict;
 my $server_list = {
     server => [
         {   # === process 1
-            name => "blog", # process 名稱 自己命名
-            path => "~/blog/server", # 位置
+            name => "service name 1", # process 名稱 自己命名
+            path => "~/", # 位置
             cmd => "php artisan serv", # 指令
         },
         {   # === process 2
-            name => "cardgame",
-            path => "/var/www/html/cardgame/Server/GameServer",
+            name => "service name 2",
+            path => "~/path_2",
             cmd => "nodemon",
         },
         {   # === process 3
-            name => "simple_storage",
-            path => "/var/www/html/simple_storage",
+            name => "service name 3",
+            path => "/var/www/html/",
             cmd => "nodemon",
         },
-        {   # === process 4
-            name => "todo_list_server",
-            path => " ~/todo_list_server",
-            cmd => "forever -c \"nodemon --exitcrash\" bin/www",
-        },
+        # add your selves ...
 
     ],
     other => [
